@@ -48,19 +48,37 @@
     <h2>Start with your resume</h2>
     <p>Tell us where you want to go next. We’ll help you get there.</p>
 
-    <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="text" placeholder="Target Job Titles" />
-      <select>
-        <option>Remote</option>
-        <option>Hybrid</option>
-        <option>Onsite</option>
-        <option>Open to all</option>
-      </select>
-      <input type="file" />
-      <button type="submit">Submit My Resume</button>
-    </form>
+    <form 
+  action="https://formspree.io/f/mvznkeyr" 
+  method="POST" 
+  enctype="multipart/form-data"
+>
+  <input type="text" name="full_name" placeholder="Full Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number">
+
+  <input type="text" name="target_job_titles" placeholder="Target Job Titles">
+
+  <select name="work_style">
+    <option value="">Preferred Locations</option>
+    <option value="Remote">Remote</option>
+    <option value="Hybrid">Hybrid</option>
+    <option value="Onsite">Onsite</option>
+    <option value="Open to all">Open to all</option>
+  </select>
+
+  <input type="text" name="salary_target" placeholder="Salary Target">
+
+  <input type="text" name="work_authorization" placeholder="Work Authorization">
+
+  <input type="url" name="linkedin_url" placeholder="LinkedIn URL">
+
+  <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+
+  <button type="submit">Submit My Resume</button>
+</form>
   </div>
 </section>
 

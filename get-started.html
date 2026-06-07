@@ -29,26 +29,45 @@
     <h2>Resume Upload Form</h2>
     <p>This is where your intake form will go.</p>
 
-    <form>
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder="Email Address">
-      <input type="tel" placeholder="Phone Number">
-      <input type="file">
-      <input type="text" placeholder="Target Job Titles">
-      <input type="text" placeholder="Preferred Locations">
-      <select>
-        <option>Remote</option>
-        <option>Hybrid</option>
-        <option>Onsite</option>
-        <option>Open to all</option>
-      </select>
-      <input type="text" placeholder="Salary Target">
-      <input type="text" placeholder="Work Authorization">
-      <input type="url" placeholder="LinkedIn URL">
-      <textarea placeholder="Industries or companies to avoid"></textarea>
-      <textarea placeholder="Anything else we should know?"></textarea>
-      <button class="primary-btn">Submit My Resume</button>
-    </form>
+    <form 
+  action="https://formspree.io/f/mvznkeyr" 
+  method="POST" 
+  enctype="multipart/form-data"
+>
+  <input type="text" name="full_name" placeholder="Full Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number">
+
+  <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+
+  <input type="text" name="target_job_titles" placeholder="Target Job Titles">
+
+  <input type="text" name="preferred_locations" placeholder="Preferred Locations">
+
+  <select name="work_style">
+    <option value="">Remote / Hybrid / Onsite</option>
+    <option value="Remote">Remote</option>
+    <option value="Hybrid">Hybrid</option>
+    <option value="Onsite">Onsite</option>
+    <option value="Open to all">Open to all</option>
+  </select>
+
+  <input type="text" name="salary_target" placeholder="Salary Target">
+
+  <input type="text" name="work_authorization" placeholder="Work Authorization">
+
+  <input type="url" name="linkedin_url" placeholder="LinkedIn URL">
+
+  <textarea name="industries_to_avoid" placeholder="Industries to avoid"></textarea>
+
+  <textarea name="companies_to_avoid" placeholder="Companies to avoid"></textarea>
+
+  <textarea name="additional_notes" placeholder="Anything else we should know?"></textarea>
+
+  <button type="submit">Submit My Resume</button>
+</form>
   </div>
 </section>
 
