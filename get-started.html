@@ -7,16 +7,25 @@
 </head>
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">AxcessHire</a>
-  <nav>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="who-we-help.html">Who We Help</a>
-    <a href="faq.html">FAQ</a>
-  </nav>
-  <a href="get-started.html" class="nav-btn">Upload My Resume</a>
-</header>
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+          <img src="Logo.png" alt="AxcessHire Logo">
+        </a>
+      
+        <nav>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="who-we-help.html">Who We Help</a>
+          <a href="faq.html">FAQ</a>
+          <a href="book-call.html">Free Career Consultation</a>
+        </nav>
+      
+        <a href="get-started.html" class="nav-btn">
+          Upload My Resume
+        </a>
+      
+      </header>
 
 <section class="page-hero">
   <p class="badge">Get Started</p>
@@ -40,14 +49,10 @@
 
   <input type="tel" name="phone" placeholder="Phone Number">
 
-  <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
-
   <input type="text" name="target_job_titles" placeholder="Target Job Titles">
 
-  <input type="text" name="preferred_locations" placeholder="Preferred Locations">
-
   <select name="work_style">
-    <option value="">Remote / Hybrid / Onsite</option>
+    <option value="">Preferred Locations</option>
     <option value="Remote">Remote</option>
     <option value="Hybrid">Hybrid</option>
     <option value="Onsite">Onsite</option>
@@ -60,13 +65,11 @@
 
   <input type="url" name="linkedin_url" placeholder="LinkedIn URL">
 
-  <textarea name="industries_to_avoid" placeholder="Industries to avoid"></textarea>
+  <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
 
-  <textarea name="companies_to_avoid" placeholder="Companies to avoid"></textarea>
-
-  <textarea name="additional_notes" placeholder="Anything else we should know?"></textarea>
-
-  <button type="submit">Submit My Resume</button>
+  <button type="submit" class="primary-btn">
+    Submit My Resume
+  </button>
 </form>
   </div>
 </section>
